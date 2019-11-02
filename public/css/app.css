@@ -1,0 +1,459 @@
+#fond_header {
+  background: url(/images/adventure-1868817_192022.jpg?a2c9a33a33eccac81e846235bf9b1b2e);
+  background-attachment: fixed;
+  height: 47em;
+}
+
+#buttonLancerNego {
+  border-width: 2px !important;
+  font-size: 20px;
+  margin-left: 8% !important;
+  padding: 8px 20px 8px 20px !important;
+}
+
+#para1 {
+  margin-left: 7% !important;
+  margin-top: 5%;
+}
+
+#telephone_haut {
+  position: absolute;
+  left: 60%;
+  top: 16%;
+}
+
+.card {
+  display: none;
+  position: absolute;
+  left: 30%;
+  top: 66%;
+}
+
+html,
+body {
+  font-family: "Nunito", sans-serif;
+}
+
+.full-height {
+  height: 100vh;
+}
+
+.flex-center {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+
+.position-ref {
+  position: relative;
+}
+
+.top-right {
+  position: absolute;
+  right: 10px;
+  top: 18px;
+}
+
+.content {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.title {
+  font-size: 84px;
+}
+
+.links > a {
+  color: #636b6f;
+  padding: 0 25px;
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 0.1rem;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.m-b-md {
+  margin-bottom: 30px;
+}
+
+a {
+  margin-left: 20px;
+}
+
+h2 {
+  margin-bottom: 20px;
+}
+
+#containerparam {
+  display: none;
+  z-index: 1;
+  position: absolute;
+  left: 13%;
+  top: 18%;
+  background-color: whitesmoke;
+}
+
+#open {
+  background-color: #FFD21C;
+}
+
+h1 {
+  text-decoration: underline;
+}
+
+.applic {
+  margin-left: 15px;
+}
+
+#paratime {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+#tourcontent {
+  font-size: 1.2rem;
+  font-weight: bold;
+  padding: 10px;
+  color: gray;
+  margin-right: 3.5vw;
+  border-radius: 10px;
+  margin-top: 20px;
+}
+
+#count {
+  color: crimson;
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+#well {
+  top: 349px;
+  left: 10px;
+  text-align: center;
+  padding: 15px;
+}
+
+#bvn {
+  font-size: 2.2rem;
+  color: #636b6f;
+}
+
+.titbvn {
+  color: #636b6f;
+  text-decoration: none;
+  font-size: 3.5rem;
+  font-weight: bold;
+  margin-top: 5vh;
+}
+
+#divini {
+  padding: 10px;
+  color: white;
+  font-weight: bold;
+  font-size: 1rem;
+  background-color: #FFD21C;
+  border-radius: 10px;
+  font-size: 30px;
+  height: 65px;
+  margin-top: 51px;
+}
+
+#divini-text {
+  font-size: 1.2rem;
+}
+
+#priceini,
+#price-currency {
+  font-size: 1.5rem;
+}
+
+#stop {
+  font-size: 40px;
+  color: red;
+  display: none;
+  position: absolute;
+  left: 120px;
+  top: 350px;
+  background-color: white;
+  flex-direction: column;
+  z-index: 1;
+  padding: 55px;
+  text-align: center;
+}
+
+#btnend {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+#bcfull {
+  color: red;
+  font-weight: bold;
+  display: none;
+}
+
+#warning-message {
+  margin: auto;
+}
+
+#accept,
+#refus {
+  font-weight: bold;
+}
+
+.table {
+  margin-top: 5vh;
+}
+
+#allheaderelements {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 90%;
+  margin-left: 67px;
+  margin-top: 43px;
+}
+
+#theapplinego {
+  display: none;
+}
+
+.propok {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.accept,
+.refus {
+  margin-left: 38px;
+  height: 50px;
+  margin-top: 19px;
+}
+
+#exitandtour {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  width: 30%;
+  font-size: 1rem;
+  margin-left: 147px;
+}
+
+#exyt {
+  font-size: 1.2rem;
+  padding: 10px;
+  border-radius: 10px;
+  margin-right: 10px;
+  font-weight: bold;
+  width: 26vw;
+}
+
+#yesorno {
+  display: none;
+}
+
+#navappli {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin-left: 50px;
+}
+
+#container {
+  border-radius: 100px;
+  font-weight: bold;
+  width: 137px;
+  padding: 5px;
+  text-align: center;
+  background: #b3b3b3;
+}
+
+#timer {
+  color: white;
+  font-size: 30px;
+  margin: 37px auto;
+  border-radius: 50%;
+  overflow: hidden;
+  position: relative;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  cursor: default;
+}
+
+#time {
+  margin-top: 5px;
+  z-index: 1;
+  position: relative;
+}
+
+#filler {
+  background: red;
+  height: 0px;
+  width: 200px;
+  position: absolute;
+  bottom: 0;
+}
+
+#pomodoro-app {
+  margin-left: 293px;
+}
+
+.blockall {
+  text-align: center;
+  color: white;
+}
+
+.titletable {
+  text-align: center;
+  color: white;
+  font-weight: bold;
+}
+
+table {
+  margin-top: 20px;
+  margin-left: 65px;
+  width: 90% !important;
+}
+
+.cell {
+  padding: 13px;
+  border-radius: 10px;
+}
+
+.seller-price-cell {
+  background-color: #FFD21C;
+}
+
+.buyer-price-cell {
+  background-color: #24AFFF;
+}
+
+.counter-cell {
+  border-radius: 50px;
+  background-color: #5C5C5C;
+  width: 50px;
+  margin: auto;
+}
+
+.wanted-price-cell {
+  background-color: #0ACC51;
+}
+
+.sold-cell {
+  background-color: #ED5F00;
+}
+
+.countone {
+  background-color: rgba(66, 60, 60, 0.8);
+  border-radius: 50px;
+  width: 50px;
+  margin: auto;
+  color: whitesmoke;
+  font-weight: bold;
+}
+
+.selfone {
+  background-color: #FFD21C;
+  color: whitesmoke;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.buythree {
+  background-color: rgba(27, 118, 236, 0.8);
+  color: whitesmoke;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.wantfour {
+  background-color: rgba(28, 184, 28, 0.8);
+  color: whitesmoke;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.soldone {
+  background-color: rgba(226, 36, 36, 0.8);
+  color: whitesmoke;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.negociation-rules-title {
+  background: #24AFFF;
+  font-size: 2.7rem;
+}
+
+.rules-listing {
+  background: rgba(255, 255, 255, 0.5);
+}
+
+#rule {
+  font-size: 1.5rem;
+}
+
+#rule-illustration {
+  background: whitesmoke;
+  border-top-left-radius: 5%;
+  border-bottom-right-radius: 5%;
+  width: 30vw;
+  height: 45vh;
+}
+
+#rule-img {
+  display: block;
+  margin: auto;
+  margin-top: 10vh;
+}
+
+.rule-association {
+  display: flex;
+}
+
+#rule-declaration {
+  font-size: 1.2rem;
+}
+
+#rule-title {
+  font-size: 2rem;
+  text-align: center;
+  margin-top: 2vh;
+  padding-bottom: 3%;
+}
+
+.rules-pagination {
+  list-style-type: none;
+  font-size: 1.5em;
+}
+
+.rules-pagination-elmt:hover {
+  cursor: pointer;
+  color: blue;
+}
+
+.shortcuts {
+  margin: auto;
+}
+
+.negotiation-button {
+  background: #24AFFF;
+}
+
+.home-back-button {
+  background: #24AFFF;
+}
+
+.negotiation-button:hover {
+  cursor: pointer;
+}
+
+.home-back-button:hover {
+  cursor: pointer;
+}
+

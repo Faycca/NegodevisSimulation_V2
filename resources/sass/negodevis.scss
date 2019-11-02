@@ -1,0 +1,38 @@
+#theapplinego{display: none;}
+/////////validation//////////
+.propok{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.accept, .refus{
+    margin-left: 38px;
+    height: 50px;
+    margin-top: 19px;
+}
+#exitandtour{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 30%;
+    font-size: 1rem;
+    margin-left: 147px;
+}
+#exyt{
+    font-size: 1.2rem;
+    padding:10px;
+    border-radius: 10px;
+    margin-right:10px;
+    font-weight: bold;
+    width: 26vw;
+}
+#yesorno{display: none;}
+#navappli{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-left: 50px;
+}
+
+
+
+
