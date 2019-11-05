@@ -23,23 +23,24 @@ let thenego = document.getElementById("thenego");
 let theEND = document.getElementById("theEND");
 
 //envoie de données//
-let priceshow =document.getElementById("validationCustom01");
-let trapshow = document.getElementById("validationCustom02");
-let rabshow = document.getElementById("validationCustom03");
-let tourshow = document.getElementById("validationCustom04");
-let priceminshow = document.getElementById("validationCustom05");
-let timeshow = document.getElementById("validationCustom06");
-let actionshow = document.getElementById("validationCustom07");
+let priceshow =document.getElementById("validationCustom01");//prix initial
+let trapshow = document.getElementById("validationCustom02");//trappes
+let rabshow = document.getElementById("validationCustom03");//rabais%
+let tourshow = document.getElementById("validationCustom04");//nombre de tour
+let priceminshow = document.getElementById("validationCustom05");//prix minimum de vente
+let timeshow = document.getElementById("validationCustom06");//le temps
+let actionshow = document.getElementById("validationCustom07");//
 
 //reception affichage de données //
-let showcount = document.getElementById("count");///nombre de tour
-let showprice = document.getElementById("showprice");
-let showbuy = document.getElementById("showbuy");
-let showwant = document.getElementById("showwant");
-let showtour = document.getElementById("showtour");
-let showrab = document.getElementById("showrab");
-let showtime = document.getElementById("minutes");
+let showcount = document.getElementById("count");///le count du tableau
+let showprice = document.getElementById("showprice");//prix initial
+let showbuy = document.getElementById("showbuy");//acheteur
+let showwant = document.getElementById("showwant");//prix proposé
+let showtour = document.getElementById("showtour");//nombre de tour
+let showrab = document.getElementById("showrab");// rabais
+let showtime = document.getElementById("minutes");//timer
 
+/////validation paramètres////
 function checkAllValid()
 {
     let allValid = true;
@@ -63,16 +64,16 @@ function forcard(event) {
         alert("Veuillez remplir TOUS les champs du formulaire pour valider vos paramètres.")
     }
 }
-
+///retour///
 function ret() {
     card.style.display = "none";
 }
-
+///ouvrir les paramètres///
 function openParam() {
     allparam.style.display = "initial";
-    
-}
 
+}
+///confirmation des paramètres///
  function closeParam() {
     allparam.style.display = "none";
     card.style.display = "none";
@@ -89,17 +90,18 @@ function openParam() {
 
  }
 
- 
 
+///fermeture de l'application///
 function closeWindow() {
     allparam.style.display = "none";
     card.style.display = "none";
 }
 
+///quitter la négociation///
 function closeNego() {
     window.location.reload();
 }
-
+/// incrémentation du chiffre / nombre de tour///
 let count = 0;
 let list = document.querySelector('tr');
 list.addEventListener('click', function(ev) {
@@ -110,9 +112,6 @@ list.addEventListener('click', function(ev) {
 
 
 function action() {
-
-//////////ajout de tr et td/////////////
-
 
     /////////////ajout list////////////////
 
@@ -198,7 +197,7 @@ function action() {
     //////button invisible/////
 
     visibbutton.style.display = "none";
-    yesorno.style.display = "initial";
+    yesorno.style.display = "flex";
 
     ///////decrementation//////
 
@@ -211,24 +210,21 @@ function action() {
       } else if (showcount.textContent == 1) {
 
   stop.style.display= "none";
-     } 
+     }
 }
-
-
-
-validaction.addEventListener("click", action);
 
 ////////conditions//////////////
 
 function acceptNego() {
 //alert("Êtes-vous sur de vouloir accepter l'offre de " + "[" + pricewant.value + "] euros");
 //alert("prochainement");
-
 }
+
 function refusNego() {
     visibbutton.style.display ="flex";
     yesorno.style.display = "none";
 }
+///les boutons///
 
 valid.addEventListener("click", forcard);
 back.addEventListener("click", ret );
@@ -239,7 +235,7 @@ exyt.addEventListener("click", closeNego);
 accept.addEventListener("click", acceptNego);
 refus.addEventListener("click", refusNego);
 theEND.addEventListener("click", closeNego);
-
+validaction.addEventListener("click", action);
 
 
 

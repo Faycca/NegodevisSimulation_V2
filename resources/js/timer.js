@@ -32,7 +32,7 @@ var pomodoro = {
           self.startWork.apply(self);
       };
       confirm.addEventListener("click", startCon);
-      
+
 
       document.querySelector('#count').onclick = function(){
           self.startCount.apply(self);
@@ -49,21 +49,22 @@ var pomodoro = {
     this.resetVariables(this.minutesDom.innerHTML, this.seconds = 0, true);
         console.log(this.minutesDom.innerHTML);
     },
+    //changement front(minuteur) selon le temps//
     dangerMinuteur: function(){
 
         this.timerDom.style.color = "white";
-        container.style.background = "#c70000";
+        container.style.background = "#ab0000";
         bcfull.style.display ="flex";
     },
     greenMinuteur: function(){
 
     this.timerDom.style.color = "white";
-    container.style.background = "rgb(179, 179, 179)";
+    container.style.background = "#34b800";
     },
     blueMinuteur: function(){
 
     this.timerDom.style.color = "white";
-    container.style.background = "rgb(255, 102, 13)";
+    container.style.background = "#010970";
     },
     stopMinuteur: function () {
         stop.style.display= "flex";
@@ -71,9 +72,9 @@ var pomodoro = {
     },
     //////////////Conditions timer////////////////
 
-  
+
     stopTimer : function(){
-        
+
         this.countDom.textContent --
         if( this.countDom.textContent < 0){
             this.countDom.textContent = 0;
@@ -88,7 +89,7 @@ var pomodoro = {
     updateDom : function(){
     this.minutesDom.innerHTML = this.toDoubleDigit(this.minutes);
     this.secondsDom.innerHTML = this.toDoubleDigit(this.seconds);
-    
+
     },
     intervalCallback : function(){
     if(!this.started) return false;
@@ -116,7 +117,7 @@ var pomodoro = {
         this.dangerMinuteur();
 
     }
-    
+
     if(this.minutes == 0 ) {
         if (this.seconds ==0) {
             this.stopMinuteur();
@@ -137,4 +138,3 @@ window.onload = function(){
     };
 
 
-   

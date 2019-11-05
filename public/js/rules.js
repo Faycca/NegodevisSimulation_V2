@@ -132,6 +132,7 @@ function goShortback() //Display the last rule
 
 jsRuleTitleContent.textContent = titles[0];
 jsRuleContent.textContent = rules[0];
+jsRuleImg.setAttribute("src", pictures[0]);
 
 
 //******* Functions' calls for each click on the pagination's links ********//

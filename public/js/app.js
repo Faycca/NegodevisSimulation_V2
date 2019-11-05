@@ -19319,22 +19319,35 @@ var stop = document.getElementById("stop");
 var thenego = document.getElementById("thenego");
 var theEND = document.getElementById("theEND"); //envoie de données//
 
-var priceshow = document.getElementById("validationCustom01");
-var trapshow = document.getElementById("validationCustom02");
-var rabshow = document.getElementById("validationCustom03");
-var tourshow = document.getElementById("validationCustom04");
-var priceminshow = document.getElementById("validationCustom05");
-var timeshow = document.getElementById("validationCustom06");
-var actionshow = document.getElementById("validationCustom07"); //reception affichage de données //
+var priceshow = document.getElementById("validationCustom01"); //prix initial
 
-var showcount = document.getElementById("count"); ///nombre de tour
+var trapshow = document.getElementById("validationCustom02"); //trappes
 
-var showprice = document.getElementById("showprice");
-var showbuy = document.getElementById("showbuy");
-var showwant = document.getElementById("showwant");
-var showtour = document.getElementById("showtour");
-var showrab = document.getElementById("showrab");
-var showtime = document.getElementById("minutes");
+var rabshow = document.getElementById("validationCustom03"); //rabais%
+
+var tourshow = document.getElementById("validationCustom04"); //nombre de tour
+
+var priceminshow = document.getElementById("validationCustom05"); //prix minimum de vente
+
+var timeshow = document.getElementById("validationCustom06"); //le temps
+
+var actionshow = document.getElementById("validationCustom07"); //
+//reception affichage de données //
+
+var showcount = document.getElementById("count"); ///le count du tableau
+
+var showprice = document.getElementById("showprice"); //prix initial
+
+var showbuy = document.getElementById("showbuy"); //acheteur
+
+var showwant = document.getElementById("showwant"); //prix proposé
+
+var showtour = document.getElementById("showtour"); //nombre de tour
+
+var showrab = document.getElementById("showrab"); // rabais
+
+var showtime = document.getElementById("minutes"); //timer
+/////validation paramètres////
 
 function checkAllValid() {
   var allValid = true;
@@ -19355,15 +19368,18 @@ function forcard(event) {
   } else {
     alert("Veuillez remplir TOUS les champs du formulaire pour valider vos paramètres.");
   }
-}
+} ///retour///
+
 
 function ret() {
   card.style.display = "none";
-}
+} ///ouvrir les paramètres///
+
 
 function openParam() {
   allparam.style.display = "initial";
-}
+} ///confirmation des paramètres///
+
 
 function closeParam() {
   allparam.style.display = "none";
@@ -19376,16 +19392,19 @@ function closeParam() {
   priceini.textContent = priceshow.value;
   showcount.textContent = tourshow.value;
   showtime.textContent = timeshow.value;
-}
+} ///fermeture de l'application///
+
 
 function closeWindow() {
   allparam.style.display = "none";
   card.style.display = "none";
-}
+} ///quitter la négociation///
+
 
 function closeNego() {
   window.location.reload();
-}
+} /// incrémentation du chiffre / nombre de tour///
+
 
 var count = 0;
 var list = document.querySelector('tr');
@@ -19396,7 +19415,6 @@ list.addEventListener('click', function (ev) {
 }, false);
 
 function action() {
-  //////////ajout de tr et td/////////////
   /////////////ajout list////////////////
   var tr = document.createElement("TR");
   var actionshow = document.getElementById("validationCustom07").value;
@@ -19481,7 +19499,7 @@ function action() {
   tdfive.appendChild(divfive); //////button invisible/////
 
   visibbutton.style.display = "none";
-  yesorno.style.display = "initial"; ///////decrementation//////
+  yesorno.style.display = "flex"; ///////decrementation//////
 
   showcount.textContent--;
 
@@ -19491,9 +19509,8 @@ function action() {
   } else if (showcount.textContent == 1) {
     stop.style.display = "none";
   }
-}
+} ////////conditions//////////////
 
-validaction.addEventListener("click", action); ////////conditions//////////////
 
 function acceptNego() {//alert("Êtes-vous sur de vouloir accepter l'offre de " + "[" + pricewant.value + "] euros");
   //alert("prochainement");
@@ -19502,7 +19519,8 @@ function acceptNego() {//alert("Êtes-vous sur de vouloir accepter l'offre de " 
 function refusNego() {
   visibbutton.style.display = "flex";
   yesorno.style.display = "none";
-}
+} ///les boutons///
+
 
 valid.addEventListener("click", forcard);
 back.addEventListener("click", ret);
@@ -19513,6 +19531,7 @@ exyt.addEventListener("click", closeNego);
 accept.addEventListener("click", acceptNego);
 refus.addEventListener("click", refusNego);
 theEND.addEventListener("click", closeNego);
+validaction.addEventListener("click", action);
 
 /***/ }),
 
@@ -19585,18 +19604,19 @@ var pomodoro = {
     this.resetVariables(this.minutesDom.innerHTML, this.seconds = 0, true);
     console.log(this.minutesDom.innerHTML);
   },
+  //changement front(minuteur) selon le temps//
   dangerMinuteur: function dangerMinuteur() {
     this.timerDom.style.color = "white";
-    container.style.background = "#c70000";
+    container.style.background = "#ab0000";
     bcfull.style.display = "flex";
   },
   greenMinuteur: function greenMinuteur() {
     this.timerDom.style.color = "white";
-    container.style.background = "rgb(179, 179, 179)";
+    container.style.background = "#34b800";
   },
   blueMinuteur: function blueMinuteur() {
     this.timerDom.style.color = "white";
-    container.style.background = "rgb(255, 102, 13)";
+    container.style.background = "#010970";
   },
   stopMinuteur: function stopMinuteur() {
     stop.style.display = "flex";

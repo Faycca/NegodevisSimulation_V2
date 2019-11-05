@@ -1,9 +1,8 @@
 @extends('welcome')
 @section('content')
-    <section class="rules-section col-10 ml-auto mr-auto">
-            <h1 class="negociation-rules-title text-center text-white text-decoration-none font-weight-bold mt-3 mb-3 text-decoration-none p-2 rounded">
-                Règles de la négociation
-            </h1>
+
+<section class="rules-section col-10 ml-auto mr-auto">
+     <h1 class="negociation-rules-title text-center text-white text-decoration-none font-weight-bold mt-3 mb-3 text-decoration-none p-2 rounded">Règles de la négociation</h1>
         <div class="rules-container">
             <div class="rules-listing rounded">
                 <div class="rule-association pl-4 pr-4 font-weight-bold">

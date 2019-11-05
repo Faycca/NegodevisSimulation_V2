@@ -25,8 +25,12 @@
 .card {
   display: none;
   position: absolute;
-  left: 30%;
-  top: 66%;
+  left: 29%;
+  top: 59%;
+}
+
+.width_button {
+  width: 140px;
 }
 
 html,
@@ -112,22 +116,6 @@ h1 {
   justify-content: space-between;
 }
 
-#tourcontent {
-  font-size: 1.2rem;
-  font-weight: bold;
-  padding: 10px;
-  color: gray;
-  margin-right: 3.5vw;
-  border-radius: 10px;
-  margin-top: 20px;
-}
-
-#count {
-  color: crimson;
-  font-weight: bold;
-  font-size: 1.5rem;
-}
-
 #well {
   top: 349px;
   left: 10px;
@@ -148,73 +136,24 @@ h1 {
   margin-top: 5vh;
 }
 
-#divini {
-  padding: 10px;
-  color: white;
-  font-weight: bold;
-  font-size: 1rem;
-  background-color: #FFD21C;
-  border-radius: 10px;
-  font-size: 30px;
-  height: 65px;
-  margin-top: 51px;
-}
-
-#divini-text {
-  font-size: 1.2rem;
-}
-
-#priceini,
-#price-currency {
-  font-size: 1.5rem;
-}
-
 #stop {
-  font-size: 40px;
-  color: red;
   display: none;
   position: absolute;
-  left: 120px;
-  top: 350px;
-  background-color: white;
-  flex-direction: column;
   z-index: 1;
-  padding: 55px;
-  text-align: center;
-}
-
-#btnend {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
+  top: 25%;
 }
 
 #bcfull {
   color: red;
-  font-weight: bold;
   display: none;
 }
 
 #warning-message {
-  margin: auto;
-}
-
-#accept,
-#refus {
-  font-weight: bold;
+  font-size: 1.2rem;
 }
 
 .table {
   margin-top: 5vh;
-}
-
-#allheaderelements {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  width: 90%;
-  margin-left: 67px;
-  margin-top: 43px;
 }
 
 #theapplinego {
@@ -226,98 +165,29 @@ h1 {
   margin-bottom: 20px;
 }
 
-.accept,
-.refus {
-  margin-left: 38px;
-  height: 50px;
-  margin-top: 19px;
-}
-
-#exitandtour {
-  display: flex;
-  flex-direction: column;
-  text-align: center;
-  width: 30%;
-  font-size: 1rem;
-  margin-left: 147px;
-}
-
-#exyt {
-  font-size: 1.2rem;
-  padding: 10px;
-  border-radius: 10px;
-  margin-right: 10px;
-  font-weight: bold;
-  width: 26vw;
-}
-
 #yesorno {
   display: none;
 }
 
-#navappli {
+#valprop {
   display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  margin-left: 50px;
 }
 
-#container {
-  border-radius: 100px;
-  font-weight: bold;
-  width: 137px;
-  padding: 5px;
-  text-align: center;
-  background: #b3b3b3;
+.size_time {
+  font-size: 1.6em;
 }
 
-#timer {
-  color: white;
-  font-size: 30px;
-  margin: 37px auto;
-  border-radius: 50%;
-  overflow: hidden;
-  position: relative;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  cursor: default;
+#titre_nbTour {
+  font-size: 1.6em;
 }
 
-#time {
-  margin-top: 5px;
-  z-index: 1;
-  position: relative;
-}
-
-#filler {
-  background: red;
-  height: 0px;
-  width: 200px;
-  position: absolute;
-  bottom: 0;
-}
-
-#pomodoro-app {
-  margin-left: 293px;
+#divini {
+  font-size: 1.3em;
 }
 
 .blockall {
   text-align: center;
   color: white;
-}
-
-.titletable {
-  text-align: center;
-  color: white;
-  font-weight: bold;
-}
-
-table {
-  margin-top: 20px;
-  margin-left: 65px;
-  width: 90% !important;
 }
 
 .cell {
@@ -455,5 +325,10 @@ table {
 
 .home-back-button:hover {
   cursor: pointer;
+}
+
+.img_facture {
+  width: 35% !important;
+  height: 15%;
 }
 
