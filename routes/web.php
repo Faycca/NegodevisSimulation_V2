@@ -28,6 +28,10 @@ Route::get('/', function () {
     return view('home/home');
 });
 
+Route::get('loader', function () {
+    return view('loader');
+});
+
 
 Route::get('/rules', function () {
     return view('rules');

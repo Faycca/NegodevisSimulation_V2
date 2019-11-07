@@ -2,3 +2,48 @@
 #titre_nbTour{font-size:1.6em;}
 #divini{font-size:1.3em;}
 
+.section{
+    height: 250px;
+    line-height: 250px;
+    background: cover url(images/geometry-1044090_1920.jpg);
+    text-align: center;
+    font-size: 2em;
+}
+
+.loader{
+    width: 50px;
+    height: 50px;
+    display: inline-block;
+    vertical-align: middle;
+    position: relative;
+}
+
+//Quart de cercle du loader
+.loader-quart{
+  border-radius: 50px;
+  border: 5px solid rgba(251, 255, 0, 0.6);
+}
+
+.loader-quart:after{
+    content:'';
+    position: absolute;
+    top: -6px; left: -6px; bottom: -6px; right: -6px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+    border: 6px solid transparent;
+    border-top-color: turquoise;
+    -webkit-animation: sprin 2s linear 0s infinite;
+            animation: sprin 2s linear 0s infinite;
+}
+
+@-webkit-keyframes sprin{
+    0%{-webkit-transform: rotate(0deg);transform: rotate(0deg);}
+    100%{-webkit-transform: rotate(360deg);transform: rotate(360deg);}
+}
+
+@keyframes sprin{
+    0%{-webkit-transform: rotate(0deg);transform: rotate(0deg);}
+    100%{-webkit-transform: rotate(360deg);transform: rotate(360deg);}
+}
+

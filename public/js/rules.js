@@ -129,11 +129,7 @@ function goShortback() //Display the last rule
 
 
 //******* Auto-display of the first rule when the page is open ******//
-
-jsRuleTitleContent.textContent = titles[0];
-jsRuleContent.textContent = rules[0];
-jsRuleImg.setAttribute("src", pictures[0]);
-
+goShortback();
 
 //******* Functions' calls for each click on the pagination's links ********//
 
