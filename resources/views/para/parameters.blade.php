@@ -91,6 +91,14 @@
 </div>
 <!--fin de la balise du message-->
 
+<!--LOADER-->
+<div id="afficheLoader" class="background_loader">
+        <section class="section_loader font-weight-bold">
+            <span class="loader loader-quart">
+            ANALYSE</span>
+        </section>
+    </div>
+
 <!--Tableau d'information sur la négociation-->
   <thead>
     <tr class="text-white">

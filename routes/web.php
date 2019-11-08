@@ -14,29 +14,18 @@
 Route::get('/', function () {
     return view('welcome');
 });
-//Route::get('/param', 'Controller@web');
-
 Route::get('/param', function () {
     return view('para/parameters');
 });
-Route::post('/param', 'ProjectController@param');
-
-//Route::get('/app', function () {
-//    return view('appli/appli');
-//});
 Route::get('/', function () {
     return view('home/home');
 });
-
 Route::get('loader', function () {
     return view('loader');
 });
-
-
 Route::get('/rules', function () {
     return view('rules');
 });
-
 Route::get('/quote', function () {
     return view('quote/quote');
 });

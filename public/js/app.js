@@ -19233,7 +19233,7 @@ module.exports = function(module) {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-
+throw new Error("Module build failed (from ./node_modules/babel-loader/lib/index.js):\nError: ENOENT: no such file or directory, open '/home/popschool/NegoDevisFinale-master/resources/js/ajax.js'");
 
 /***/ }),
 
@@ -19416,6 +19416,8 @@ list.addEventListener('click', function (ev) {
 
 function action() {
   /////////////ajout list////////////////
+  var loader = document.getElementById("afficheLoader");
+  var tableau = document.getElementById("theTABLE");
   var tr = document.createElement("TR");
   var actionshow = document.getElementById("validationCustom07").value;
   var pricetest = document.getElementById("validationCustom01").value;
@@ -19424,7 +19426,15 @@ function action() {
     alert("Veuillez entrer une proposition !");
   } else {
     count++;
-    document.getElementById("theTABLE").appendChild(tr);
+    tableau.appendChild(tr);
+    tableau.style.display = "none";
+    setTimeout(function () {
+      tableau.style.display = "";
+    }, 10000);
+    loader.style.display = "initial";
+    setTimeout(function () {
+      loader.style.display = "none";
+    }, 10000);
   }
 
   document.getElementById("validationCustom07").value = "";
@@ -19542,7 +19552,7 @@ validaction.addEventListener("click", action);
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-
+throw new Error("Module build failed (from ./node_modules/babel-loader/lib/index.js):\nError: ENOENT: no such file or directory, open '/home/popschool/NegoDevisFinale-master/resources/js/rules.js'");
 
 /***/ }),
 

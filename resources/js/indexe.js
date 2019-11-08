@@ -114,7 +114,8 @@ list.addEventListener('click', function(ev) {
 function action() {
 
     /////////////ajout list////////////////
-
+    var loader = document.getElementById("afficheLoader");
+    var tableau = document.getElementById("theTABLE");
     var tr = document.createElement("TR");
     var actionshow = document.getElementById("validationCustom07").value;
     var pricetest = document.getElementById("validationCustom01").value;
@@ -124,7 +125,17 @@ function action() {
 
     } else {
         count++
-        document.getElementById("theTABLE").appendChild(tr);
+        tableau.appendChild(tr);
+
+        tableau.style.display="none";
+        setTimeout(function(){
+        tableau.style.display = "";
+        }, 10000);
+
+        loader.style.display="initial";
+        setTimeout(function(){
+        loader.style.display = "none";
+        }, 10000);
     }
 
     document.getElementById("validationCustom07").value = "";

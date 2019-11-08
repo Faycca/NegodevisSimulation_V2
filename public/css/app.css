@@ -185,39 +185,55 @@ h1 {
   font-size: 1.3em;
 }
 
-.section {
-  height: 250px;
-  line-height: 250px;
-  background: cover url(/images/geometry-1044090_1920.jpg?e4d65d1e27ada92663179f4a1b3302c1);
+.background_loader {
+  border-radius: 20px;
+  background: rgba(240, 240, 240, 0.6);
+  font-family: "Orbitron", sans-serif;
+  position: absolute;
+  top: 2%;
+  left: 0;
+  height: 580px;
+  padding: 2%;
+  width: 100%;
+  display: none;
+}
+
+.section_loader {
+  background-color: #ede9e9;
+  width: 45%;
+  border-radius: 25px;
   text-align: center;
-  font-size: 2em;
+  font-size: 1em;
+  color: grey;
 }
 
 .loader {
-  width: 50px;
-  height: 50px;
+  width: 250px;
+  height: 250px;
   display: inline-block;
   vertical-align: middle;
   position: relative;
 }
 
 .loader-quart {
-  border-radius: 50px;
-  border: 5px solid rgba(251, 255, 0, 0.6);
+  border-radius: 250px;
+  border: 25px dashed grey;
+  text-align: center;
+  line-height: 200px;
 }
 
 .loader-quart:after {
   content: "";
   position: absolute;
-  top: -6px;
-  left: -6px;
-  bottom: -6px;
-  right: -6px;
-  width: 50px;
-  height: 50px;
-  border-radius: 50px;
-  border: 6px solid transparent;
-  border-top-color: turquoise;
+  top: -24px;
+  left: -24px;
+  bottom: -24px;
+  right: -24px;
+  width: 250px;
+  height: 250px;
+  border-radius: 250px;
+  border: 25px double transparent;
+  border-top-color: #d32b2b;
   -webkit-animation: sprin 2s linear 0s infinite;
   animation: sprin 2s linear 0s infinite;
 }
